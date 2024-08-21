@@ -1,0 +1,141 @@
+body{
+    background-image: url("../../images/background.png");
+}
+
+/* Algemeen voor het teams grid */
+#teams {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Verbreed de team-cards */
+    gap: 3rem; /* Ruimte tussen zowel de kolommen als de rijen */
+    padding: 1.25rem;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stijl voor elke team-card */
+.team-card {
+    background-color: white;
+    border: 0.125rem solid #0078D4; /* Blauwe rand voor consistentie met de header */
+    border-radius: 0.625rem; /* Ronde hoeken voor een moderne look */
+    padding: 1.25rem; /* Iets meer padding voor een luchtigere uitstraling */
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Zacht schaduweffect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animatie voor hover-effect */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Zorgt ervoor dat elementen gelijk verdeeld zijn */
+    height: 31.25rem; /* Verhoogde hoogte voor betere verhoudingen */
+}
+
+/* Stijl voor de teamnaam */
+.team-card h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #0078D4;
+    margin-bottom: 0.625rem;
+    font-family: 'Arial', sans-serif;
+    height: 3.75rem; /* Vaste hoogte voor consistentie */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijl voor het teamlogo */
+.team-card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    height: 15rem; /* Vaste hoogte voor logo's */
+    object-fit: contain; /* Zorgt ervoor dat het logo binnen de hoogte past */
+    align-self: center; /* Centreert de afbeelding horizontaal */
+    margin-top: auto; /* Plaatst de afbeelding meer naar onderen */
+}
+
+
+/* Stijl voor de 'See the riders' knop */
+.team-card .riders {
+    background-color: #0078D4;
+    font-size: 1.25rem;
+    color: white;
+    padding: 0.625rem 1rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto; /* Zorgt ervoor dat deze aan de onderkant van de kaart staat */
+}
+
+/* Hover-effect voor de 'See the riders' knop */
+.team-card .riders:hover {
+    background-color: #005bb5;
+    color: #fff;
+}
+
+/* Algemeen voor het teams grid */
+#ridersFromTeam {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Verbreed de team-cards */
+    gap: 3rem; /* Ruimte tussen zowel de kolommen als de rijen */
+    padding: 1.25rem;
+    background-color: #f9f9f9;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Stijl voor elke team-card */
+.rider-card {
+    background-color: white;
+    border: 0.125rem solid #0078D4; /* Blauwe rand voor consistentie met de header */
+    border-radius: 0.625rem; /* Ronde hoeken voor een moderne look */
+    padding: 1.25rem; /* Iets meer padding voor een luchtigere uitstraling */
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Zacht schaduweffect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animatie voor hover-effect */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Zorgt ervoor dat elementen gelijk verdeeld zijn */
+    height: 31.25rem; /* Verhoogde hoogte voor betere verhoudingen */
+}
+
+/* Stijl voor de teamnaam */
+.rider-card h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #0078D4;
+    margin-bottom: 0.625rem;
+    font-family: 'Arial', sans-serif;
+    height: 3.75rem; /* Vaste hoogte voor consistentie */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijl voor het teamlogo */
+.rider-card img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    height: 15rem; /* Vaste hoogte voor logo's */
+    object-fit: contain; /* Zorgt ervoor dat het logo binnen de hoogte past */
+    align-self: center; /* Centreert de afbeelding horizontaal */
+    margin-top: auto; /* Plaatst de afbeelding meer naar onderen */
+}
+
+
+.rider-card p{
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    height: 2rem; /* Vaste hoogte voor consistentie */
+    display: flex;
+    padding-left: 0.3rem;
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,58 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #000;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #f3f3f3; /* Lichte achtergrondkleur voor een frisse look */
+    padding: 1.25rem; /* Ruimte rondom de inhoud van de header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.25rem solid #0078D4; /* Blauwe onderstreep voor een sportieve uitstraling */
+}
+
+/* Stijl voor de h1 (website naam) */
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #0078D4;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Stijl voor het logo */
+header img {
+    height: 5rem; /* Groter logo */
+    margin-right: 1.25rem; /* Ruimte tussen het logo en de rest van de header */
+}
+
+/* Stijl voor de navigatie */
+header nav ul {
+    list-style: none; /* Verwijder standaard opsommingstekens */
+    display: flex;
+    gap: 1.875rem; /* Meer ruimte tussen de navigatie-items */
+    margin: 0;
+    padding: 0;
+}
+
+/* Stijl voor de navigatielinks */
+header nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0078D4;
+    font-size: 1.5rem; /* Grotere tekst voor de navigatie */
+    font-family: 'Arial', sans-serif;
+    padding: 0.625rem 1.25rem; /* Iets grotere padding voor meer ruimte */
+    border-radius: 0.3125rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover-effect voor de navigatielinks */
+header nav ul li a:hover {
+    background-color: #0078D4;
+    color: white;
+}
